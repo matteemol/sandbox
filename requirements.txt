@@ -1,1 +1,3 @@
 virtualenv
+sphinx
+spinx-rtd-theme
