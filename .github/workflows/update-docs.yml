@@ -1,8 +1,8 @@
 name: Commit documentation changes (html)
 
 on:
-  push:
-    branches: [ "rtd-docs" ]
+  # push:
+    # branches: [ "rtd-docs" ]
 
   workflow_dispatch:
 
