@@ -6,6 +6,8 @@
 Welcome to Sandbox's documentation!
 ===================================
 
+Is this page now visible?
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
