@@ -1,19 +1,8 @@
-#import the PyPDF2 module
-import PyPDF2
+from PyPDF2 import PdfReader
 
-#open the PDF file
-PDFfile = open('sample.pdf.', 'rb')
+reader = PdfReader("sample.pdf")
 
-PDFfilereader = PyPDF2.PdfFileReader(PDFfile)
+print(len(reader.pages))
 
-#print the number of pages
-print(PDFfilereader.numPages)
-
-#provide the page number
-pages = PDFfilereader.getPage(85)
-
-#extracting the text in PDF file
-print(pages.extractText())
-
-#close the PDF file
-PDFfile.close()
+page = reader.pages[len(reader.pages)]
+print(page.extract_text())
